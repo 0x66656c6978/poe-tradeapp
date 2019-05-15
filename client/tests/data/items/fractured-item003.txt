@@ -1,0 +1,26 @@
+Rarity: Rare
+Skull Gnash
+Sundering Axe
+--------
+Two Handed Axe
+Quality: +8% (augmented)
+Physical Damage: 114-236 (augmented)
+Critical Strike Chance: 5.00%
+Attacks per Second: 1.25
+Weapon Range: 11
+--------
+Requirements:
+Level: 60
+Str: 149 (unmet)
+Dex: 76
+--------
+Sockets: B-R 
+--------
+Item Level: 86
+--------
++9 to Dexterity (fractured)
+76% increased Physical Damage (fractured)
++35% to Global Critical Strike Multiplier (fractured)
++49 to Strength
+--------
+Fractured Item

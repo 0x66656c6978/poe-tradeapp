@@ -1,0 +1,17 @@
+Rarity: Rare
+Havoc Loop
+Topaz Ring
+--------
+Requirements:
+Level: 46
+--------
+Item Level: 83
+--------
++21% to Lightning Resistance
+--------
++27 to Dexterity (fractured)
++100 to Evasion Rating (fractured)
++238 to Accuracy Rating
++2 Life gained for each Enemy hit by your Attacks
+--------
+Fractured Item

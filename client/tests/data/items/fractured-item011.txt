@@ -1,0 +1,17 @@
+Rarity: Rare
+Sorrow Barb
+Penetrating Arrow Quiver
+--------
+Requirements:
+Level: 52
+--------
+Item Level: 85
+--------
+Arrows Pierce an additional Target
+--------
++1 Mana gained on Kill (fractured)
+29% increased Elemental Damage with Attack Skills (fractured)
++39 to Dexterity
++159 to Accuracy Rating
+--------
+Fractured Item

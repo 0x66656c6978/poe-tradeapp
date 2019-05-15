@@ -1,0 +1,21 @@
+Rarity: Rare
+Dread Visage
+Lion Pelt
+--------
+Evasion Rating: 514 (augmented)
+--------
+Requirements:
+Level: 70
+Dex: 150 (unmet)
+--------
+Sockets: G-G 
+--------
+Item Level: 85
+--------
++381 to Accuracy Rating (fractured)
++84 to maximum Life (fractured)
+24% increased Stun and Block Recovery (fractured)
++134 to Evasion Rating
++12% to Cold Resistance
+--------
+Fractured Item
