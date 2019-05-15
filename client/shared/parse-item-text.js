@@ -219,8 +219,6 @@ function parseItemText(clipboardContent) {
         helpText
     }
 
-    console.log(itemDescription)
-
     return itemDescription
 }
 
