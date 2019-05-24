@@ -4,6 +4,7 @@ const {
     globalShortcut
 } = require('electron')
 
+
 function Application() {
     this.hotkeyMap = {}
     this.modules = {}
@@ -46,8 +47,7 @@ Application.prototype.createWindow = function () {
     }
 
     this.mainWindow = new BrowserWindow(windowOptions)
-    this.mainWindow.loadURL('https://www.pathofexile.com/trade/search')
-
+    
     if (this.debug) {
         // Launch fullscreen with DevTools open, usage: npm run debug
         this.mainWindow.webContents.openDevTools()

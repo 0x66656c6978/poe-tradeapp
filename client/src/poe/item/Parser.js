@@ -1,6 +1,10 @@
 const fs = require('fs')
 const path = require('path')
 
+
+function Parser() {
+}
+
 // maybe needed later to map mods to their respective mod id's
 // const itemStats = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'stats.json'), 'utf8'))
 
@@ -22,7 +26,7 @@ function getNextChunkLines(chunks) {
     return lines
 }
 
-function parseItemText(clipboardContent) {
+Parser.parseItemText = function (clipboardContent) {
     let chunks = clipboardContent.split(ITEM_SECTION_SEPARATOR)
     let isFracturedItem = false
     let isAbyssJewel = false
@@ -223,4 +227,4 @@ function parseItemText(clipboardContent) {
 }
 
 
-module.exports = parseItemText
+module.exports = Parser;
