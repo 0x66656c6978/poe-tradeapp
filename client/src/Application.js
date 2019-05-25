@@ -25,7 +25,7 @@ Application.prototype.initialize = function () {
     electronApp.on('window-all-closed', () => {
         if (process.platform !== 'darwin') {
             electronApp.quit()
-            console.info('shutdown succeeded')
+            if (this.app.debug) console.info('shutdown succeeded')
         }
     })
 

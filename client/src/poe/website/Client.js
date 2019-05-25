@@ -3,6 +3,10 @@ function triggerSearchFunc(payload) {
     app.doSearch();
 }
 
+function getLatestSearch() {
+    return app.$store._modules.root._children.transient.state.searches[0];
+}
+
 class Client {
 
     websiteUrl = 'https://www.pathofexile.com/trade/search'
@@ -21,23 +25,15 @@ class Client {
     }
 
     doSearch(searchQuery) {
-        this.browserWindow.webContents.executeJavaScript(
-            this.createInjector(triggerSearchFunc, searchQuery),
-            true
-        )
-        .then(this.onSearchSucceed.bind(this))
-        .catch(this.onSearchFail.bind(this))
-    }
-    
-    onSearchSucceed (args) {
-        if (this.app.debug) {
-            console.info('JS executed successfully', args)
-        }
+        return this.injectJS(triggerSearchFunc, searchQuery)
     }
 
-    onSearchFail (reason) {
-        console.info('Executing search failed')
-        console.error(reason)
+    getLatestSearch() {
+        return this.injectJS(getLatestSearch, {});
+    }
+
+    injectJS(code, args) {
+        return this.browserWindow.webContents.executeJavaScript(this.createInjector(code, args), true)
     }
 
 }

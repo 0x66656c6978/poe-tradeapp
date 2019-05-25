@@ -218,6 +218,7 @@ Parser.parseItemText = function (clipboardContent) {
         isAbyssItem,
         isShaperItem,
         isElderItem,
+        isSynthesisedItem,
         fracturedMods,
         note,
         helpText
