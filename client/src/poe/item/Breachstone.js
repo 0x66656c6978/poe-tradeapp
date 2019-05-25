@@ -1,9 +1,9 @@
 const Item = require('./Item');
 
-class Breachstone extends Item {
+class BreachStone extends Item {
     constructor() {
         throw new Error('Not Implemented');
     }
 }
 
-module.exports = Breachstone;
+module.exports = BreachStone;

@@ -1,8 +1,7 @@
 const {
     Winhook,
     Input
-} = require('../../../../../winhook/build/Release/winhook.node');
-
+} = require('C:/p/winhook/build/Release/winhook.node');
 const KBD_KEY_C = 0x43;
 const KBD_KEY_CTRL = 0x11;
 

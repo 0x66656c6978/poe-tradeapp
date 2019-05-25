@@ -1,9 +1,10 @@
 const Socketable = require('./Socketable');
 
-class Weapon extends Socketable {
+class Armour extends Socketable {
     constructor() {
         throw new Error('Not Implemented');
     }
 }
 
-module.exports = Weapon;
+module.exports = Armour;
+

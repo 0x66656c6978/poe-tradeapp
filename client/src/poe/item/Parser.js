@@ -39,6 +39,7 @@ Parser.parseItemText = function (clipboardContent) {
     let noteChunk = null
     let socketChunk = null
     let helpChunk = null
+    let stackSizeChunk = null
 
     // filter out the note chunk and the fracture item / synthesized item
     chunks = chunks.filter(function (chunk) {
@@ -52,6 +53,10 @@ Parser.parseItemText = function (clipboardContent) {
         }
         if (chunk.startsWith('Sockets:')) {
             socketChunk = splitLines(chunk)
+            return false;
+        }
+        if (chunk.startsWith('Stack Size:')) {
+            stackSizeChunk = splitLines(chunk);
             return false;
         }
         if (chunk.trim() === 'Fractured Item') {
@@ -76,6 +81,9 @@ Parser.parseItemText = function (clipboardContent) {
         }
         if (chunk.startsWith('Place into an Abyssal Socket')) {
             isAbyssJewel = true
+            return false;
+        }
+        if (chunk.startsWith('Right click this item then left click a normal item to apply it.')) {
             return false;
         }
         return true;

@@ -14,7 +14,7 @@
     "mocha": "^6.1.4"
   },
   "scripts": {
-    "test": "mocha src/test"
+    "start": "electron . --debug"
   },
   "author": "",
   "license": "ISC"
