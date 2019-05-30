@@ -7,19 +7,27 @@ const KBD_KEY_CTRL = 0x11;
 
 class Client {
 
+    /** @var {String} windowTitle */
     windowTitle = "Path of Exile"
-    poeWindowHandle = null
+    /** @var {Number} windowHandle window handle referred to by `windowTitle` */
+    windowHandle = null
 
+    /**
+     * Check whether the first window found with `windowTitle` is the current foreground window
+     */
     isWindowActive() {
-        if (this.poeWindowHandle === null) {
-            this.poeWindowHandle = Winhook.FindWindow(this.windowTitle);
-            if (!this.poeWindowHandle) {
+        if (this.windowHandle === null) {
+            this.windowHandle = Winhook.FindWindow(this.windowTitle);
+            if (!this.windowHandle) {
                 return false;
             }
         }
-        return Winhook.GetForegroundWindow() === this.poeWindowHandle;
+        return Winhook.GetForegroundWindow() === this.windowHandle;
     }
 
+    /**
+     * Send the ctrl+c keyboard combination to the current foreground window.
+     */
     sendCtrlC() {
         try {
             var sent = wh.SendInput.apply(wh, makeInputs([
@@ -39,10 +47,22 @@ class Client {
         }
     }
 
+    /**
+     * Shorthand method to convert a list of input scancodes to
+     * instances of `winhook.Input`'s
+     * 
+     * @param {Array} inputs 
+     */
     makeInputs(inputs) {
         return inputs.map(makeInput);
     }
 
+    /**
+     * Return a new instance of `winhook.Input` for the given scancode
+     * 
+     * @param {Number} virtualKeyCode integer (0-255)
+     * @param {Boolean} isKeyUp true for key released, false for pressed
+     */
     makeInput(virtualKeyCode, isKeyUp) {
         var input = new Input();
         input.type = winhook.Winhook.INPUT_KEYBOARD;

@@ -3,7 +3,7 @@ const {
     BrowserWindow,
     globalShortcut
 } = require('electron')
-const ItemParser = require('./poe/item/Parser');
+const ItemParser = require('./poe/ItemParser');
 const PoeClient = require('./poe/Client');
 const PoeWebsiteClient = require('./poe/website/Client');
 
@@ -11,11 +11,18 @@ if (process.mas) app.setName('TEST')
 
 class Application {
 
+    /** @var {BrowserWindow} mainWindow */
     mainWindow = null
+    /** @var {WebsiteClient} websiteClient */
     websiteClient = null
+    /** @var {PoeClient} poeClient */
     poeClient = new PoeClient()
+    /** @var {Boolean} debug */
     debug = /--debug/.test(process.argv[2])
 
+    /**
+     * Initialize the electron application
+     */
     initialize() {
         this.makeSingleInstance()
 
@@ -37,6 +44,9 @@ class Application {
         })
     }
 
+    /**
+     * Create the browser window and initialize the WebsiteClient
+     */
     createWindow() {
         const windowOptions = {
             width: 1080,
@@ -67,6 +77,10 @@ class Application {
         this.websiteClient.initialize();
     }
 
+    /**
+     * Called when the hotkey combination is pressed.
+     * Only executes if Path of Exile is the foreground window.
+     */
     handleHotkeyPressed() {
         this.retries = 0;
         if (!this.poeClient.isWindowActive()) {
@@ -79,6 +93,11 @@ class Application {
         setTimeout(this.doSearch.bind(this), 333);
     }
 
+    /**
+     * Parse the clipboard, try to convert it to a search query
+     * and then run the search function with this query if successful.
+     * 
+     */
     doSearch() {
         if (this.app.debug) console.info('Reading clipboard');
         let item = null
@@ -119,13 +138,23 @@ class Application {
     }
 
 
+    /**
+     * Called when the promise to `WebsiteClient.doSearch` fails
+     * 
+     * @param {Error} reason 
+     */
     handleSearchError(reason) {
         console.error('Search failed. Reason: ', reason)
     }
 
+    /**
+     * Called when the promise to `WebsiteClient.doSearch` resolves
+     */
     handleSearchSucceeded() {
         var latestSearch = this.websiteClient.getLatestSearch()
         if (this.latestSearch.localId === latestSearch.localId) {
+            // the local search id hasn't updated, which probably means the search results
+            // haven't been retrieved yet. we retry until the id changes or we run into `maxTries`
             if (this.retries > maxRetries) {
                 console.error('polling latest search results timed out')
                 return
@@ -140,10 +169,16 @@ class Application {
         this.handleLatestSearchUpdated();
     }
 
+    /**
+     * Called when the latest search results changed.
+     */
     handleLatestSearchUpdated() {
         if (this.app.debug) console.info('Latest search updated')
     }
 
+    /**
+     * Make sure that there is only one instance of the electron app running
+     */
     makeSingleInstance() {
         if (process.mas) return
     
