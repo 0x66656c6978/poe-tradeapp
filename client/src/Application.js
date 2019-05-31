@@ -12,13 +12,16 @@ if (process.mas) app.setName('TEST')
 class Application {
 
     /** @var {BrowserWindow} mainWindow */
-    mainWindow = null
     /** @var {WebsiteClient} websiteClient */
-    websiteClient = null
     /** @var {PoeClient} poeClient */
-    poeClient = new PoeClient()
     /** @var {Boolean} debug */
-    debug = /--debug/.test(process.argv[2])
+
+    constructor() {
+        this.mainWindow = null
+        this.websiteClient = null
+        this.poeClient = new PoeClient()
+        this.debug = /--debug/.test(process.argv[2])
+    }
 
     /**
      * Initialize the electron application
@@ -29,14 +32,14 @@ class Application {
         app.on('ready', () => {
             this.createWindow()
         })
-    
+
         app.on('window-all-closed', () => {
             if (process.platform !== 'darwin') {
                 app.quit()
                 if (this.debug) console.info('shutdown succeeded')
             }
         })
-    
+
         app.on('activate', () => {
             if (this.mainWindow === null) {
                 this.createWindow()
@@ -54,9 +57,9 @@ class Application {
             height: 840,
             title: app.getName(),
         }
-    
+
         this.mainWindow = new BrowserWindow(windowOptions)
-        
+
         if (this.debug) {
             // Launch fullscreen with DevTools open, usage: npm run debug
             this.mainWindow.webContents.openDevTools()
@@ -96,24 +99,24 @@ class Application {
     /**
      * Parse the clipboard, try to convert it to a search query
      * and then run the search function with this query if successful.
-     * 
+     *
      */
     doSearch() {
         if (this.app.debug) console.info('Reading clipboard');
         let item = null
         let searchQuery = null
         let clipboardContent = clipboard.readText()
-    
+
         while (clipboardContent.indexOf('\r') !== -1) {
             clipboardContent = clipboardContent.replace('\r', '')
         }
-    
+
         if (this.app.debug) {
             console.log('---------------- Clipboard ----------------')
             console.log(clipboardContent);
             console.log('----------------    End    ----------------')
         }
-    
+
         try {
             if (this.app.debug) console.info('Parsing clipboard contents')
             item = parseItem(clipboardContent)
@@ -122,7 +125,7 @@ class Application {
             console.error(ex)
             return
         }
-    
+
         try {
             if (this.app.debug) console.info('Mapping item to search query')
             searchQuery = item.getSearchQuery()
@@ -140,8 +143,8 @@ class Application {
 
     /**
      * Called when the promise to `WebsiteClient.doSearch` fails
-     * 
-     * @param {Error} reason 
+     *
+     * @param {Error} reason
      */
     handleSearchError(reason) {
         console.error('Search failed. Reason: ', reason)
@@ -181,9 +184,9 @@ class Application {
      */
     makeSingleInstance() {
         if (process.mas) return
-    
+
         app.requestSingleInstanceLock()
-    
+
         app.on('second-instance', () => {
             if (this.mainWindow) {
             if (this.mainWindow.isMinimized()) this.mainWindow.restore()

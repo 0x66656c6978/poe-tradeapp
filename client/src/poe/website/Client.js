@@ -1,8 +1,8 @@
 /**
  * Injects the given search query payload into the runtime of the target-app
  * and then triggers the doSearch method of the target-app
- * 
- * @param {Object} payload 
+ *
+ * @param {Object} payload
  */
 function triggerSearchFunc(payload) {
     app.query.query = payload;
@@ -18,14 +18,12 @@ function getLatestSearch() {
 
 class Client {
 
-    /** @var {String} websiteUrl */
-    websiteUrl = 'https://www.pathofexile.com/trade/search'
-
     /**
-     * @param {BrowserWindow} browserWindow 
+     * @param {BrowserWindow} browserWindow
      */
     constructor(browserWindow) {
         this.browserWindow = browserWindow;
+        this.websiteUrl = 'https://www.pathofexile.com/trade/search'
     }
 
     /**
@@ -39,8 +37,8 @@ class Client {
 
     /**
      * Run the `triggerSearchFunc` function on the target-app with the given search query
-     * 
-     * @param {Object} searchQuery 
+     *
+     * @param {Object} searchQuery
      */
     doSearch(searchQuery) {
         return this.injectJS(triggerSearchFunc, searchQuery)
@@ -57,9 +55,9 @@ class Client {
      * Create js code that contains a self-executing function which will execute the given function
      * with the given argument.
      * The given function must not be native code, as this will cause the `Function.toString` method to return garbage.
-     * 
-     * @param {Function} func 
-     * @param {*} funcArgs 
+     *
+     * @param {Function} func
+     * @param {*} funcArgs
      * @return {String}
      */
     createInjector(func, funcArgs) {
@@ -69,9 +67,9 @@ class Client {
     /**
      * Create an injector function from the given function and arguments, then execute
      * the resulting payload on the target-app.
-     * 
-     * @param {Function} func 
-     * @param {*} funcArgs 
+     *
+     * @param {Function} func
+     * @param {*} funcArgs
      */
     injectJS(func, funcArgs) {
         return this.browserWindow.webContents.executeJavaScript(this.createInjector(func, args), true)
@@ -80,4 +78,3 @@ class Client {
 }
 
 module.exports = Client;
-

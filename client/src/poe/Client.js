@@ -8,9 +8,12 @@ const KBD_KEY_CTRL = 0x11;
 class Client {
 
     /** @var {String} windowTitle */
-    windowTitle = "Path of Exile"
     /** @var {Number} windowHandle window handle referred to by `windowTitle` */
-    windowHandle = null
+
+    constructor() {
+        this.windowTitle = "Path of Exile"
+        this.windowHandle = null
+    }
 
     /**
      * Check whether the first window found with `windowTitle` is the current foreground window
@@ -50,8 +53,8 @@ class Client {
     /**
      * Shorthand method to convert a list of input scancodes to
      * instances of `winhook.Input`'s
-     * 
-     * @param {Array} inputs 
+     *
+     * @param {Array} inputs
      */
     makeInputs(inputs) {
         return inputs.map(makeInput);
@@ -59,7 +62,7 @@ class Client {
 
     /**
      * Return a new instance of `winhook.Input` for the given scancode
-     * 
+     *
      * @param {Number} virtualKeyCode integer (0-255)
      * @param {Boolean} isKeyUp true for key released, false for pressed
      */
@@ -69,7 +72,7 @@ class Client {
         var payload = { wVk: virtualKeyCode };
         if (isKeyUp) payload.dwFlags = winhook.Input.KEYEVENTF_KEYUP;
         input.ki = payload;
-        return input;    
+        return input;
     }
 
 }
