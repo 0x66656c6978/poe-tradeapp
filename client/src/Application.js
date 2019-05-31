@@ -3,7 +3,7 @@ const {
     BrowserWindow,
     globalShortcut
 } = require('electron')
-const ItemParser = require('./poe/ItemParser');
+const parseItem = require('./poe/parseItem');
 const PoeClient = require('./poe/Client');
 const PoeWebsiteClient = require('./poe/website/Client');
 
@@ -116,7 +116,7 @@ class Application {
     
         try {
             if (this.app.debug) console.info('Parsing clipboard contents')
-            item = ItemParser.parse(clipboardContent)
+            item = parseItem(clipboardContent)
         } catch(ex) {
             console.error('An error occured validating the clipboard')
             console.error(ex)

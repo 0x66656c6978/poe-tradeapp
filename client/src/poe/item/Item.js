@@ -1,3 +1,9 @@
-class Item {}
+class Item {
+    constructor() {
+        this.rarity = null;
+        this.name = null;
+        this.itemLevel = null;
+    }
+}
 
 module.exports = Item;

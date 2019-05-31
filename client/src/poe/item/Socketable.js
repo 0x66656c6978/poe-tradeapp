@@ -1,10 +1,11 @@
-const Item = require('./Item');
+import Equippable from './Equippable';
+import { Sockets } from './Sockets';
 
-class Socketable extends Item {
+class Socketable extends Equippable {
     constructor() {
-        throw new Error('Not Implemented');
+        super();
+        this.sockets = new Sockets();
     }
 }
 
 module.exports = Socketable;
-
