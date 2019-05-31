@@ -15,13 +15,14 @@ ToDo: write usage guide
 
 ```
 git clone https://github.com/0x66656c6978/poe-tradeapp.git
-cd poe-tradeapp
+cd poe-tradeapp/client
 npm install
 ```
 
 To run
 
 ```
+cd client
 npm run build
 npm run start
 ```
@@ -31,6 +32,7 @@ npm run start
 Run the app, then copy the description of an item in PoE and press the key combination "CommandOrControl+F". Et voila, the app should now have searched for the item base + item level and optionally the number of fractured mods on the item
 
 ```
+cd client
 npm run build
 npm run test
 ```
