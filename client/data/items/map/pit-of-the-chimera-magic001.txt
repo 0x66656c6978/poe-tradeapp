@@ -1,0 +1,16 @@
+Rarity: Magic
+Titan's Pit of the Chimera Map of Ice
+--------
+Map Tier: 16
+Item Quantity: +30% (augmented)
+Item Rarity: +14% (augmented)
+Monster Pack Size: +9% (augmented)
+Quality: +7% (augmented)
+--------
+Item Level: 85
+--------
+Area has patches of chilled ground
+Unique Boss has 35% increased Life
+Unique Boss has 70% increased Area of Effect
+--------
+Travel to this Map by using it in the Templar Laboratory or a personal Map Device. Maps can only be used once.

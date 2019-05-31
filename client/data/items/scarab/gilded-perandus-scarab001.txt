@@ -1,0 +1,11 @@
+Rarity: Normal
+Gilded Perandus Scarab
+--------
+Area contains 4 additional Perandus Chests
+--------
+The dark day has come, Icius Perandus. Today either we succeed or humanity dies.
+Enact your plan. Prevent the fate of the Vaal from befalling the Eternal Empire!
+--------
+Can be used in the Templar Laboratory or a personal Map Device to add modifiers to a Map.
+--------
+Note: ~price 15 chaos

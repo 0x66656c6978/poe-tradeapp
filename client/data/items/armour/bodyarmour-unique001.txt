@@ -1,0 +1,24 @@
+Rarity: Unique
+Voll's Protector
+Holy Chainmail
+--------
+Armour: 310 (augmented)
+Energy Shield: 62 (augmented)
+--------
+Requirements:
+Level: 35
+Str: 53
+Int: 53
+--------
+Sockets: R 
+--------
+Item Level: 69
+--------
+60% increased Armour and Energy Shield
+50% reduced maximum Mana
+Gain a Power Charge for each Enemy you hit with a Critical Strike
+--------
+Although a great leader during the war,
+Voll proved disastrous in times of peace.
+--------
+Note: ~price 1 alt

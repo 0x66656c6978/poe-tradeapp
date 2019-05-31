@@ -1,0 +1,7 @@
+Rarity: Currency
+Frigid Fossil
+--------
+More Cold modifiers
+No Fire modifiers
+--------
+Place in a Resonator to influence item crafting.

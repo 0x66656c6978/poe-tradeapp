@@ -1,0 +1,8 @@
+Rarity: Normal
+Burial Chambers Map
+--------
+Map Tier: 6
+--------
+Item Level: 76
+--------
+Travel to this Map by using it in the Templar Laboratory or a personal Map Device. Maps can only be used once.

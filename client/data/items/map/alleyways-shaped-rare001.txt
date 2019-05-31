@@ -1,0 +1,21 @@
+Rarity: Rare
+Rugged Ziggurat
+Shaped Alleyways Map
+--------
+Map Tier: 6 (augmented)
+Item Quantity: +59% (augmented)
+Item Rarity: +36% (augmented)
+Monster Pack Size: +23% (augmented)
+--------
+Item Level: 74
+--------
+Players are Cursed with Elemental Weakness
+Monsters have 70% increased Area of Effect
+Monsters have 60% chance to Avoid Elemental Ailments
+Monsters reflect 15% of Elemental Damage
++20% Monster Chaos Resistance
++30% Monster Elemental Resistance
+--------
+Travel to this Map by using it in the Templar Laboratory or a personal Map Device. Maps can only be used once.
+--------
+Note: ~price 1 chaos

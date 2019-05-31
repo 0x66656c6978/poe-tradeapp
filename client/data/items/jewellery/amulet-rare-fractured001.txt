@@ -1,0 +1,17 @@
+Rarity: Rare
+Gale Charm
+Citrine Amulet
+--------
+Requirements:
+Level: 32
+--------
+Item Level: 83
+--------
++21 to Strength and Dexterity
+--------
++1 to all Attributes (fractured)
++11 Life gained on Kill (fractured)
+Adds 1 to 2 Fire Damage to Attacks
+5.3 Life Regenerated per second
+--------
+Fractured Item

@@ -1,0 +1,9 @@
+Rarity: Currency
+Splinter of Chayula
+--------
+Stack Size: 17/100
+--------
+Combine 100 splinters to create Chayula's Breachstone.
+Shift click to unstack.
+--------
+Note: ~price 2 chaos

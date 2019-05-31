@@ -1,0 +1,24 @@
+Rarity: Gem
+Winter Orb
+--------
+Cold, Spell, Channelling, AoE, Duration, Projectile
+Level: 15
+Mana Cost: 4
+Cast Time: 0.25 sec
+Critical Strike Chance: 6.00%
+Effectiveness of Added Damage: 50%
+Experience: 4465281/7759995
+--------
+Requirements:
+Level: 60
+Int: 134
+--------
+Channel to conjure an orb above you, which pelts nearby enemies with projectiles that impact the ground and explode. Channelling for longer builds up stages on the skill. When you stop channelling, the stages decay over a duration.
+--------
+Deals 142 to 178 Cold Damage
++0.4 seconds to Base Duration per Stage
+Fires projectiles every 0.8 seconds
+15% increased Projectile Frequency per Stage
+Maximum 10 Stages
+--------
+Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.

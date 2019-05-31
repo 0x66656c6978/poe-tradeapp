@@ -1,0 +1,14 @@
+Rarity: Magic
+Scorching Hypnotic Eye Jewel of Potency
+--------
+Abyss
+--------
+Requirements:
+Level: 41
+--------
+Item Level: 83
+--------
++9% to Global Critical Strike Multiplier
+Adds 11 to 14 Fire Damage to Spells while Dual Wielding
+--------
+Place into an Abyssal Socket on an Item or into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.

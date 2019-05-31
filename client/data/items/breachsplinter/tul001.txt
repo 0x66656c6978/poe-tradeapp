@@ -1,0 +1,9 @@
+Rarity: Currency
+Splinter of Tul
+--------
+Stack Size: 105/100
+--------
+Combine 100 splinters to create Tul's Breachstone.
+Shift click to unstack.
+--------
+Note: ~price 0.5 fuse

@@ -1,0 +1,14 @@
+Rarity: Magic
+Vigorous Necromancer Silks
+--------
+Energy Shield: 117
+--------
+Requirements:
+Level: 59
+Int: 160
+--------
+Sockets: B-B B 
+--------
+Item Level: 80
+--------
++100 to maximum Life

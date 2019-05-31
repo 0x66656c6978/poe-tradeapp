@@ -1,0 +1,10 @@
+Rarity: Magic
+Pit of the Chimera Map
+--------
+Map Tier: 16
+--------
+Item Level: 83
+--------
+Unidentified
+--------
+Travel to this Map by using it in the Templar Laboratory or a personal Map Device. Maps can only be used once.

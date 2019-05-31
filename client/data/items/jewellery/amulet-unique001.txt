@@ -1,0 +1,20 @@
+Rarity: Unique
+Bisco's Collar
+Gold Amulet
+--------
+Requirements:
+Level: 30
+--------
+Item Level: 72
+--------
+12% increased Rarity of Items found
+--------
+142% increased Rarity of Items Dropped by Slain Magic Enemies
+38% increased Quantity of Items Dropped by Slain Normal Enemies
+--------
+Friendship worth its weight in gold,
+a treasure every day.
+I thought together we'd grow old,
+until fate pulled you away.
+--------
+Note: ~price 20 chaos

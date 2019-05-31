@@ -1,0 +1,16 @@
+Rarity: Normal
+Crimson Raiment
+--------
+Evasion Rating: 264
+Energy Shield: 52
+--------
+Requirements:
+Level: 48
+Dex: 71
+Int: 71
+--------
+Sockets: G-G-G-B 
+--------
+Item Level: 48
+--------
+Note: ~price 2 alt

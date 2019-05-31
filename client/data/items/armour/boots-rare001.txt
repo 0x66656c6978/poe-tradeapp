@@ -1,0 +1,22 @@
+Rarity: Rare
+Wrath Trail
+Murder Boots
+--------
+Evasion Rating: 185
+Energy Shield: 17
+--------
+Requirements:
+Level: 69
+Dex: 82
+Int: 42
+--------
+Sockets: B-G-R-G 
+--------
+Item Level: 72
+--------
++18 to Strength
++32 to Intelligence
+8% increased Rarity of Items found
+23% increased Stun and Block Recovery
+--------
+Note: ~price 5 alt

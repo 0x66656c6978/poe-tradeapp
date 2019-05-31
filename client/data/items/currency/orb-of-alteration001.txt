@@ -1,0 +1,10 @@
+Rarity: Currency
+Orb of Alteration
+--------
+Stack Size: 1/20
+--------
+Reforges a magic item with new random modifiers
+--------
+Right click this item then left click a magic item to apply it.
+--------
+Note: ~price 4 p

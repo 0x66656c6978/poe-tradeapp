@@ -1,0 +1,24 @@
+Rarity: Rare
+Demon Veil
+Lacquered Garb
+--------
+Evasion Rating: 286
+Energy Shield: 56
+--------
+Requirements:
+Level: 65
+Dex: 51 (augmented)
+Int: 51 (augmented)
+--------
+Sockets: G-G-B 
+--------
+Item Level: 82
+--------
++11 to Intelligence
+15% increased Stun and Block Recovery
+32% reduced Attribute Requirements
+13% of Physical Damage from Hits taken as Lightning Damage
+--------
+Shaper Item
+--------
+Note: ~price 1 jew

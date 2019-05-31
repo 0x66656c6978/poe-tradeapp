@@ -1,0 +1,22 @@
+Rarity: Unique
+Atziri's Promise
+Amethyst Flask
+--------
+Lasts 3.50 Seconds
+Consumes 30 of 60 Charges on use
+Currently has 0 Charges
++35% to Chaos Resistance
+--------
+Requirements:
+Level: 68
+--------
+Item Level: 72
+--------
+2% of Chaos Damage Leeched as Life during Flask effect
+Gain 16% of Physical Damage as Extra Chaos Damage during effect
+Gain 10% of Elemental Damage as Extra Chaos Damage during effect
+--------
+"Death needs not your understanding. It needs only your loyalty." 
+- Atziri, Queen of the Vaal
+--------
+Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.

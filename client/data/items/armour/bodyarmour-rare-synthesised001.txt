@@ -1,0 +1,26 @@
+Rarity: Rare
+Rune Keep
+Synthesised Full Leather
+--------
+Evasion Rating: 352 (augmented)
+--------
+Requirements:
+Level: 28
+Dex: 81
+--------
+Sockets: G-G 
+--------
+Item Level: 33
+--------
++7 to Dexterity
+--------
++12 to Dexterity
+24% increased Evasion Rating
++58 to maximum Life
++6% to Fire Resistance
+10% increased Stun and Block Recovery
+Reflects 1 Physical Damage to Melee Attackers
+--------
+Synthesised Item
+--------
+Note: ~price 1 jew

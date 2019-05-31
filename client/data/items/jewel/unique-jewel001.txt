@@ -1,0 +1,14 @@
+Rarity: Unique
+Clear Mind
+Cobalt Jewel
+--------
+Limited to: 1
+--------
+Item Level: 80
+--------
+20% increased Mana Regeneration Rate
+44% increased Spell Damage while no Mana is Reserved
+--------
+When your thoughts flow like a river, why build a dam?
+--------
+Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.

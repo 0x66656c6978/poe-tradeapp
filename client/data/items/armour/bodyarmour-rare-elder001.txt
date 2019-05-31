@@ -1,0 +1,22 @@
+Rarity: Rare
+Armageddon Jack
+Majestic Plate
+--------
+Armour: 544 (augmented)
+--------
+Requirements:
+Level: 67
+Str: 144
+--------
+Sockets: R-G 
+--------
+Item Level: 84
+--------
++14 to Armour
++51 to maximum Life
+Recover 3% of Maximum Life on Kill
+23% increased Stun and Block Recovery
+Reflects 24 Physical Damage to Melee Attackers
+Attacks have +1.13% to Critical Strike Chance
+--------
+Elder Item

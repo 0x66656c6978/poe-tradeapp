@@ -1,0 +1,19 @@
+Rarity: Rare
+Cruelscreech
+Blood Chieftain
+--------
+Genus: Ape Chieftains
+Group: Primates
+Family: The Wilds
+--------
+Item Level: 83
+--------
+Farric Presence
+Extra Life
+Armoured
+Frenzy as Damaged
+Summons Apes from Trees
+--------
+Right-click to add this to your bestiary.
+--------
+Note: ~price 3 chaos

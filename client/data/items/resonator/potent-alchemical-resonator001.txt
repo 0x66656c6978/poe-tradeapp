@@ -1,0 +1,10 @@
+Rarity: Currency
+Potent Alchemical Resonator
+--------
+Requires 2 Socketed Fossils
+--------
+Sockets: D D 
+--------
+Upgrades a normal item to a rare item
+--------
+All sockets must be filled with Fossils before this item can be used.
